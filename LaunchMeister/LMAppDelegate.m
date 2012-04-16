@@ -34,7 +34,6 @@
 {
 
     self.serialConnection = [[LMSerialConnection instance] init];
-
     NSArray *previousFiles = [LMLaunchMeisterModel getLaunchPads];
 
     int numberOfLaunchPads = 8;
@@ -58,5 +57,9 @@
 
         [self.window.contentView addSubview:dropAreaController.view];
     }
+
+
+    [self.serialConnection saveLaunchPads:self.launchPads];
+
 }
 @end
