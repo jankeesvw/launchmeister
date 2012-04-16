@@ -7,15 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "TTDropAreaProtocol.h"
+#import "LMLaunchPadProtocol.h"
 
-@class TTDropArea;
+@class LMLaunchPad;
 
-@interface TTDropAreaViewController : NSViewController <TTDropAreaProtocol>
+@interface LMLaunchPadController : NSViewController <LMLaunchPadProtocol>
 
 @property(strong) IBOutlet NSImageView *image;
 @property(strong) IBOutlet NSTextField *title;
-@property(strong) IBOutlet TTDropArea *dropArea;
+@property(strong) IBOutlet LMLaunchPad *dropArea;
+
+@property(nonatomic, strong) NSURL *selectedFile;
 
 - (IBAction)launchApp:(id)sender;
 

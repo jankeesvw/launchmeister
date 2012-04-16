@@ -14,9 +14,13 @@
 		F465B43C153B4679004F2251 /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B43B153B4679004F2251 /* TTAppDelegate.m */; };
 		F465B43F153B4679004F2251 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F465B43D153B4679004F2251 /* MainMenu.xib */; };
 		F465B445153B47AE004F2251 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F465B42B153B4679004F2251 /* AppKit.framework */; };
-		F465B445153B47AE004F2253 /* TTDropArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B445153B47AE004F2252 /* TTDropArea.m */; };
-		F465B451153B5248004F2251 /* TTDropAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B44F153B5248004F2251 /* TTDropAreaViewController.m */; };
-		F465B452153B5248004F2251 /* TTDropAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F465B450153B5248004F2251 /* TTDropAreaViewController.xib */; };
+		F465B445153B47AE004F2253 /* LMLaunchPad.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B445153B47AE004F2252 /* LMLaunchPad.m */; };
+		F465B451153B5248004F2251 /* LMLaunchPadController.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B44F153B5248004F2251 /* LMLaunchPadController.m */; };
+		F465B452153B5248004F2251 /* LMLaunchPadController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F465B450153B5248004F2251 /* LMLaunchPadController.xib */; };
+		F465B452153B5248004F2255 /* TTLaunchMeisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F2254 /* TTLaunchMeisterModel.m */; };
+		F465B452153B5248004F225B /* EELog.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F225A /* EELog.m */; };
+		F465B452153B5248004F225F /* EESingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F225E /* EESingleton.m */; };
+		F465B452153B5248004F2262 /* NSThread+Reusabilitee.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F2261 /* NSThread+Reusabilitee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +37,20 @@
 		F465B43A153B4679004F2251 /* TTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAppDelegate.h; sourceTree = "<group>"; };
 		F465B43B153B4679004F2251 /* TTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
 		F465B43E153B4679004F2251 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		F465B445153B47AE004F2252 /* TTDropArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDropArea.m; sourceTree = "<group>"; };
-		F465B445153B47AE004F2254 /* TTDropArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDropArea.h; sourceTree = "<group>"; };
-		F465B44E153B5248004F2251 /* TTDropAreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDropAreaViewController.h; sourceTree = "<group>"; };
-		F465B44F153B5248004F2251 /* TTDropAreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDropAreaViewController.m; sourceTree = "<group>"; };
-		F465B450153B5248004F2251 /* TTDropAreaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTDropAreaViewController.xib; sourceTree = "<group>"; };
-		F465B452153B5248004F2252 /* TTDropAreaProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDropAreaProtocol.h; sourceTree = "<group>"; };
+		F465B445153B47AE004F2252 /* LMLaunchPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLaunchPad.m; sourceTree = "<group>"; };
+		F465B445153B47AE004F2254 /* LMLaunchPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLaunchPad.h; sourceTree = "<group>"; };
+		F465B44E153B5248004F2251 /* LMLaunchPadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLaunchPadController.h; sourceTree = "<group>"; };
+		F465B44F153B5248004F2251 /* LMLaunchPadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLaunchPadController.m; sourceTree = "<group>"; };
+		F465B450153B5248004F2251 /* LMLaunchPadController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMLaunchPadController.xib; sourceTree = "<group>"; };
+		F465B452153B5248004F2252 /* LMLaunchPadProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLaunchPadProtocol.h; sourceTree = "<group>"; };
+		F465B452153B5248004F2254 /* TTLaunchMeisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLaunchMeisterModel.m; sourceTree = "<group>"; };
+		F465B452153B5248004F2256 /* TTLaunchMeisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLaunchMeisterModel.h; sourceTree = "<group>"; };
+		F465B452153B5248004F2259 /* EELog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EELog.h; sourceTree = "<group>"; };
+		F465B452153B5248004F225A /* EELog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EELog.m; sourceTree = "<group>"; };
+		F465B452153B5248004F225D /* EESingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EESingleton.h; sourceTree = "<group>"; };
+		F465B452153B5248004F225E /* EESingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EESingleton.m; sourceTree = "<group>"; };
+		F465B452153B5248004F2260 /* NSThread+Reusabilitee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+Reusabilitee.h"; sourceTree = "<group>"; };
+		F465B452153B5248004F2261 /* NSThread+Reusabilitee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+Reusabilitee.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 				F465B42E153B4679004F2251 /* LaunchMeister */,
 				F465B427153B4679004F2251 /* Frameworks */,
 				F465B425153B4679004F2251 /* Products */,
+				F465B452153B5248004F2267 /* External */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +111,7 @@
 				F465B43D153B4679004F2251 /* MainMenu.xib */,
 				F465B42F153B4679004F2251 /* Supporting Files */,
 				F465B445153B47AE004F2255 /* DropArea */,
+				F465B452153B5248004F2253 /* Model */,
 			);
 			path = LaunchMeister;
 			sourceTree = "<group>";
@@ -117,14 +131,60 @@
 		F465B445153B47AE004F2255 /* DropArea */ = {
 			isa = PBXGroup;
 			children = (
-				F465B452153B5248004F2252 /* TTDropAreaProtocol.h */,
-				F465B445153B47AE004F2252 /* TTDropArea.m */,
-				F465B445153B47AE004F2254 /* TTDropArea.h */,
-				F465B44E153B5248004F2251 /* TTDropAreaViewController.h */,
-				F465B44F153B5248004F2251 /* TTDropAreaViewController.m */,
-				F465B450153B5248004F2251 /* TTDropAreaViewController.xib */,
+				F465B452153B5248004F2252 /* LMLaunchPadProtocol.h */,
+				F465B445153B47AE004F2252 /* LMLaunchPad.m */,
+				F465B445153B47AE004F2254 /* LMLaunchPad.h */,
+				F465B44E153B5248004F2251 /* LMLaunchPadController.h */,
+				F465B44F153B5248004F2251 /* LMLaunchPadController.m */,
+				F465B450153B5248004F2251 /* LMLaunchPadController.xib */,
 			);
 			path = DropArea;
+			sourceTree = "<group>";
+		};
+		F465B452153B5248004F2253 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F465B452153B5248004F2256 /* TTLaunchMeisterModel.h */,
+				F465B452153B5248004F2254 /* TTLaunchMeisterModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F465B452153B5248004F2257 /* Epologee */ = {
+			isa = PBXGroup;
+			children = (
+				F465B452153B5248004F2261 /* NSThread+Reusabilitee.m */,
+				F465B452153B5248004F2260 /* NSThread+Reusabilitee.h */,
+				F465B452153B5248004F2258 /* Log */,
+				F465B452153B5248004F225C /* Singleton */,
+			);
+			path = Epologee;
+			sourceTree = "<group>";
+		};
+		F465B452153B5248004F2258 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				F465B452153B5248004F225A /* EELog.m */,
+				F465B452153B5248004F2259 /* EELog.h */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		F465B452153B5248004F225C /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				F465B452153B5248004F225E /* EESingleton.m */,
+				F465B452153B5248004F225D /* EESingleton.h */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		F465B452153B5248004F2267 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				F465B452153B5248004F2257 /* Epologee */,
+			);
+			path = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +242,7 @@
 				F465B433153B4679004F2251 /* InfoPlist.strings in Resources */,
 				F465B439153B4679004F2251 /* Credits.rtf in Resources */,
 				F465B43F153B4679004F2251 /* MainMenu.xib in Resources */,
-				F465B452153B5248004F2251 /* TTDropAreaViewController.xib in Resources */,
+				F465B452153B5248004F2251 /* LMLaunchPadController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +255,12 @@
 			files = (
 				F465B435153B4679004F2251 /* main.m in Sources */,
 				F465B43C153B4679004F2251 /* TTAppDelegate.m in Sources */,
-				F465B445153B47AE004F2253 /* TTDropArea.m in Sources */,
-				F465B451153B5248004F2251 /* TTDropAreaViewController.m in Sources */,
+				F465B445153B47AE004F2253 /* LMLaunchPad.m in Sources */,
+				F465B451153B5248004F2251 /* LMLaunchPadController.m in Sources */,
+				F465B452153B5248004F2255 /* TTLaunchMeisterModel.m in Sources */,
+				F465B452153B5248004F225B /* EELog.m in Sources */,
+				F465B452153B5248004F225F /* EESingleton.m in Sources */,
+				F465B452153B5248004F2262 /* NSThread+Reusabilitee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

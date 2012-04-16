@@ -7,38 +7,49 @@
 //
 
 #import "TTAppDelegate.h"
-#import "TTDropAreaViewController.h"
+#import "LMLaunchPadController.h"
+#import "TTLaunchMeisterModel.h"
 
 @implementation TTAppDelegate
-{
-    TTDropAreaViewController *dropAreaOne;
-    TTDropAreaViewController *dropAreaTwo;
-    TTDropAreaViewController *dropAreaThree;
-    TTDropAreaViewController *dropAreaFour;
-}
 
 @synthesize window = _window;
-@synthesize dropAreaOne;
-@synthesize dropAreaTwo;
-@synthesize dropAreaThree;
-@synthesize dropAreaFour;
+@synthesize launchPads = _launchPads;
+
+- (void)applicationWillTerminate:(NSNotification *)notification
+{
+    NSMutableArray *selectedFiles = [NSMutableArray array];
+    for (LMLaunchPadController *launchPad in self.launchPads)
+    {
+        [selectedFiles addObject:launchPad.selectedFile];
+    }
+    [TTLaunchMeisterModel saveLaunchPads:selectedFiles];
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    dropAreaOne = [[TTDropAreaViewController alloc] initWithNibName:@"TTDropAreaViewController" bundle:nil];
-    [self.window.contentView addSubview:self.dropAreaOne.view];
 
-    dropAreaTwo = [[TTDropAreaViewController alloc] initWithNibName:@"TTDropAreaViewController" bundle:nil];
-    [dropAreaTwo.view setFrame:NSMakeRect(200, 0, 200, 200)];
-    [self.window.contentView addSubview:self.dropAreaTwo.view];
+    NSArray *previousFiles = [TTLaunchMeisterModel getLaunchPads];
 
-    dropAreaThree = [[TTDropAreaViewController alloc] initWithNibName:@"TTDropAreaViewController" bundle:nil];
-    [dropAreaThree.view setFrame:NSMakeRect(400, 0, 200, 200)];
-    [self.window.contentView addSubview:self.dropAreaThree.view];
+    int numberOfLaunchPads = 8;
 
-    dropAreaFour = [[TTDropAreaViewController alloc] initWithNibName:@"TTDropAreaViewController" bundle:nil];
-    [dropAreaFour.view setFrame:NSMakeRect(600, 0, 200, 200)];
-    [self.window.contentView addSubview:self.dropAreaFour.view];
+    self.launchPads = [NSMutableArray array];
+
+    int y = 0;
+    for (NSUInteger pad = 0; pad < numberOfLaunchPads; pad++)
+    {
+        LMLaunchPadController *dropAreaController = [[LMLaunchPadController alloc] initWithNibName:@"LMLaunchPadController" bundle:nil];
+        [self.launchPads addObject:dropAreaController];
+
+        NSURL *url = [previousFiles count] > pad ? [previousFiles objectAtIndex:pad] : [NSURL URLWithString:@""];
+        dropAreaController.selectedFile = url;
+
+        int x = pad % 4 * 200;
+
+        if (pad % 4 == 0 && pad != 0) y += 200;
+
+        [dropAreaController.view setFrame:NSMakeRect(x, y, 200, 200)];
+
+        [self.window.contentView addSubview:dropAreaController.view];
+    }
 }
-
 @end

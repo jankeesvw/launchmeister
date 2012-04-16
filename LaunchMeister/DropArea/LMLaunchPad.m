@@ -1,7 +1,7 @@
-#import "TTDropArea.h"
-#import "TTDropAreaProtocol.h"
+#import "LMLaunchPad.h"
+#import "LMLaunchPadProtocol.h"
 
-@implementation TTDropArea
+@implementation LMLaunchPad
 @synthesize delegate = _delegate;
 
 - (id)initWithFrame:(NSRect)frameRect

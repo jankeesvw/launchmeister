@@ -8,13 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class TTDropAreaViewController;
+@class LMLaunchPadController;
 
 @interface TTAppDelegate : NSObject <NSApplicationDelegate>
 
 @property(assign) IBOutlet NSWindow *window;
-@property(nonatomic, strong) TTDropAreaViewController *dropAreaOne;
-@property(nonatomic, strong) TTDropAreaViewController *dropAreaTwo;
-@property(nonatomic, strong) TTDropAreaViewController *dropAreaThree;
-@property(nonatomic, strong) TTDropAreaViewController *dropAreaFour;
+@property(nonatomic, strong) NSMutableArray *launchPads;
 @end
