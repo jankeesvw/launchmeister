@@ -1,16 +1,16 @@
 //
-//  TTAppDelegate.m
+//  LMAppDelegate.m
 //  LaunchMeister
 //
 //  Created by Jankees Woezik on 15-04-12.
 //  Copyright (c) 2012 Twelve Twenty. All rights reserved.
 //
 
-#import "TTAppDelegate.h"
+#import "LMAppDelegate.h"
 #import "LMLaunchPadController.h"
 #import "TTLaunchMeisterModel.h"
 
-@implementation TTAppDelegate
+@implementation LMAppDelegate
 
 @synthesize window = _window;
 @synthesize launchPads = _launchPads;

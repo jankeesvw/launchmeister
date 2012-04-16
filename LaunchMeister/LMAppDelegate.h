@@ -1,5 +1,5 @@
 //
-//  TTAppDelegate.h
+//  LMAppDelegate.h
 //  LaunchMeister
 //
 //  Created by Jankees Woezik on 15-04-12.
@@ -10,7 +10,7 @@
 
 @class LMLaunchPadController;
 
-@interface TTAppDelegate : NSObject <NSApplicationDelegate>
+@interface LMAppDelegate : NSObject <NSApplicationDelegate>
 
 @property(assign) IBOutlet NSWindow *window;
 @property(nonatomic, strong) NSMutableArray *launchPads;

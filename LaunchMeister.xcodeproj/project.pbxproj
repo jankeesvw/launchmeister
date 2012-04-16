@@ -11,7 +11,7 @@
 		F465B433153B4679004F2251 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F465B431153B4679004F2251 /* InfoPlist.strings */; };
 		F465B435153B4679004F2251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B434153B4679004F2251 /* main.m */; };
 		F465B439153B4679004F2251 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F465B437153B4679004F2251 /* Credits.rtf */; };
-		F465B43C153B4679004F2251 /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B43B153B4679004F2251 /* TTAppDelegate.m */; };
+		F465B43C153B4679004F2251 /* LMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B43B153B4679004F2251 /* LMAppDelegate.m */; };
 		F465B43F153B4679004F2251 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F465B43D153B4679004F2251 /* MainMenu.xib */; };
 		F465B445153B47AE004F2251 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F465B42B153B4679004F2251 /* AppKit.framework */; };
 		F465B445153B47AE004F2253 /* LMLaunchPad.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B445153B47AE004F2252 /* LMLaunchPad.m */; };
@@ -34,9 +34,9 @@
 		F465B434153B4679004F2251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F465B436153B4679004F2251 /* LaunchMeister-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaunchMeister-Prefix.pch"; sourceTree = "<group>"; };
 		F465B438153B4679004F2251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		F465B43A153B4679004F2251 /* TTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAppDelegate.h; sourceTree = "<group>"; };
-		F465B43B153B4679004F2251 /* TTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
-		F465B43E153B4679004F2251 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F465B43A153B4679004F2251 /* LMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMAppDelegate.h; sourceTree = "<group>"; };
+		F465B43B153B4679004F2251 /* LMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMAppDelegate.m; sourceTree = "<group>"; };
+		F465B43E153B4679004F2251 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = ../en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F465B445153B47AE004F2252 /* LMLaunchPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLaunchPad.m; sourceTree = "<group>"; };
 		F465B445153B47AE004F2254 /* LMLaunchPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLaunchPad.h; sourceTree = "<group>"; };
 		F465B44E153B5248004F2251 /* LMLaunchPadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLaunchPadController.h; sourceTree = "<group>"; };
@@ -106,12 +106,12 @@
 		F465B42E153B4679004F2251 /* LaunchMeister */ = {
 			isa = PBXGroup;
 			children = (
-				F465B43A153B4679004F2251 /* TTAppDelegate.h */,
-				F465B43B153B4679004F2251 /* TTAppDelegate.m */,
-				F465B43D153B4679004F2251 /* MainMenu.xib */,
+				F465B43A153B4679004F2251 /* LMAppDelegate.h */,
+				F465B43B153B4679004F2251 /* LMAppDelegate.m */,
 				F465B42F153B4679004F2251 /* Supporting Files */,
-				F465B445153B47AE004F2255 /* DropArea */,
+				F465B445153B47AE004F2255 /* LauchPad */,
 				F465B452153B5248004F2253 /* Model */,
+				F465B452153B5248004F2268 /* Interface */,
 			);
 			path = LaunchMeister;
 			sourceTree = "<group>";
@@ -128,7 +128,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F465B445153B47AE004F2255 /* DropArea */ = {
+		F465B445153B47AE004F2255 /* LauchPad */ = {
 			isa = PBXGroup;
 			children = (
 				F465B452153B5248004F2252 /* LMLaunchPadProtocol.h */,
@@ -136,9 +136,8 @@
 				F465B445153B47AE004F2254 /* LMLaunchPad.h */,
 				F465B44E153B5248004F2251 /* LMLaunchPadController.h */,
 				F465B44F153B5248004F2251 /* LMLaunchPadController.m */,
-				F465B450153B5248004F2251 /* LMLaunchPadController.xib */,
 			);
-			path = DropArea;
+			path = LauchPad;
 			sourceTree = "<group>";
 		};
 		F465B452153B5248004F2253 /* Model */ = {
@@ -185,6 +184,15 @@
 				F465B452153B5248004F2257 /* Epologee */,
 			);
 			path = External;
+			sourceTree = "<group>";
+		};
+		F465B452153B5248004F2268 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F465B450153B5248004F2251 /* LMLaunchPadController.xib */,
+				F465B43D153B4679004F2251 /* MainMenu.xib */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F465B435153B4679004F2251 /* main.m in Sources */,
-				F465B43C153B4679004F2251 /* TTAppDelegate.m in Sources */,
+				F465B43C153B4679004F2251 /* LMAppDelegate.m in Sources */,
 				F465B445153B47AE004F2253 /* LMLaunchPad.m in Sources */,
 				F465B451153B5248004F2251 /* LMLaunchPadController.m in Sources */,
 				F465B452153B5248004F2255 /* TTLaunchMeisterModel.m in Sources */,

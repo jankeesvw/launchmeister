@@ -23,7 +23,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="LMLaunchPadController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LaunchMeister/DropArea/LMLaunchPadController.m">
+        <entry file="file://$PROJECT_DIR$/LaunchMeister/LauchPad/LMLaunchPadController.m">
           <provider selected="true" editor-type-id="text-editor">
             <state line="53" column="4" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
               <folding />
@@ -32,7 +32,7 @@
         </entry>
       </file>
       <file leaf-file-name="LMLaunchPadController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LaunchMeister/DropArea/LMLaunchPadController.h">
+        <entry file="file://$PROJECT_DIR$/LaunchMeister/LauchPad/LMLaunchPadController.h">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="11" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
               <folding />
@@ -43,14 +43,14 @@
       <file leaf-file-name="TTLaunchMeisterModel.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LaunchMeister/Model/TTLaunchMeisterModel.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="16" selection-start="226" selection-end="226" vertical-scroll-proportion="0.238698">
+            <state line="11" column="101" selection-start="284" selection-end="284" vertical-scroll-proportion="0.238698">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TTAppDelegate.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LaunchMeister/TTAppDelegate.m">
+      <file leaf-file-name="LMAppDelegate.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LaunchMeister/LMAppDelegate.m">
           <provider selected="true" editor-type-id="text-editor">
             <state line="24" column="34" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
               <folding />
@@ -151,24 +151,6 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="LaunchMeister" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DropArea" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LaunchMeister" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="External" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
@@ -234,6 +216,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32951117" sideWeight="0.67052025" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -244,7 +227,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -318,12 +300,12 @@
         <state line="32" column="6" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.5962963" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaunchMeister/DropArea/LMLaunchPad.h">
+    <entry file="file://$PROJECT_DIR$/LaunchMeister/LauchPad/LMLaunchPad.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="28" selection-start="126" selection-end="126" vertical-scroll-proportion="0.13019891" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaunchMeister/DropArea/LMLaunchPadProtocol.h">
+    <entry file="file://$PROJECT_DIR$/LaunchMeister/LauchPad/LMLaunchPadProtocol.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="8" selection-start="49" selection-end="49" vertical-scroll-proportion="0.04339964" />
       </provider>
@@ -333,7 +315,7 @@
         <state line="56" column="16" selection-start="2773" selection-end="2781" vertical-scroll-proportion="0.26666668" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaunchMeister/DropArea/LMLaunchPad.m">
+    <entry file="file://$PROJECT_DIR$/LaunchMeister/LauchPad/LMLaunchPad.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="32" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.761302" />
       </provider>
@@ -362,28 +344,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaunchMeister/TTAppDelegate.h">
+    <entry file="file://$PROJECT_DIR$/LaunchMeister/LMAppDelegate.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="46" selection-start="22" selection-end="22" vertical-scroll-proportion="0.014319809">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaunchMeister/DropArea/LMLaunchPadController.m">
+    <entry file="file://$PROJECT_DIR$/LaunchMeister/LauchPad/LMLaunchPadController.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="4" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaunchMeister/DropArea/LMLaunchPadController.h">
+    <entry file="file://$PROJECT_DIR$/LaunchMeister/LauchPad/LMLaunchPadController.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="11" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LaunchMeister/TTAppDelegate.m">
+    <entry file="file://$PROJECT_DIR$/LaunchMeister/LMAppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="34" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
           <folding />
@@ -392,7 +374,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LaunchMeister/Model/TTLaunchMeisterModel.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="226" selection-end="226" vertical-scroll-proportion="0.238698">
+        <state line="11" column="101" selection-start="284" selection-end="284" vertical-scroll-proportion="0.238698">
           <folding />
         </state>
       </provider>
