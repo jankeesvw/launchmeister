@@ -16,4 +16,6 @@
 
 @property(assign) IBOutlet NSWindow *window;
 @property(nonatomic, strong) NSMutableArray *launchPads;
+
 @end
+

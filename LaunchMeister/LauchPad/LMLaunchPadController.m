@@ -17,6 +17,7 @@
 @synthesize title;
 @synthesize dropArea;
 @synthesize selectedFile = _selectedFile;
+@synthesize address = _address;
 
 - (void)loadView
 {

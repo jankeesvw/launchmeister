@@ -1,5 +1,5 @@
 @protocol LMSerialConnectionDelegate <NSObject>
-- (void)didReceiveSignal:(NSString *)text;
+- (void)didReceiveSignal:(NSString *)address;
 
 @optional
 

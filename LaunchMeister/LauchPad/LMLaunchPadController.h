@@ -16,8 +16,8 @@
 @property(strong) IBOutlet NSImageView *image;
 @property(strong) IBOutlet NSTextField *title;
 @property(strong) IBOutlet LMLaunchPad *dropArea;
-
 @property(nonatomic, strong) NSURL *selectedFile;
+@property(nonatomic, assign) NSString *address;
 
 - (IBAction)launchApp:(id)sender;
 

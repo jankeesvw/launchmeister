@@ -152,10 +152,12 @@
 // updates the textarea for incoming text by appending text
 - (void)appendToIncomingText:(id)text
 {
-    // add the text to the textarea
     NSAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:text];
 
-    NSLog(@"AttrString %@", attrString);
+    NSString *input = [attrString string];
+    NSString *trimmedString = [input stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
+    [self.delegate didReceiveSignal:trimmedString];
 }
 
 // This selector/function will be called as another thread...

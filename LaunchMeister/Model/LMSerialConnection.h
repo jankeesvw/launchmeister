@@ -12,4 +12,5 @@
 @interface LMSerialConnection : EESingleton
 
 @property(nonatomic, assign) id <LMSerialConnectionDelegate> delegate;
+
 @end
