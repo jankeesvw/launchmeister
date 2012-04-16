@@ -9,10 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 @class LMLaunchPadController;
+@class LMSerialConnection;
+@class LMLauncher;
 
 @interface LMAppDelegate : NSObject <NSApplicationDelegate>
 
 @property(assign) IBOutlet NSWindow *window;
 @property(nonatomic, strong) NSMutableArray *launchPads;
-@property(nonatomic, strong) LMSerialConnection *serialConnection;
 @end

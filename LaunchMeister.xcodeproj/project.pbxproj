@@ -22,6 +22,8 @@
 		F465B452153B5248004F225F /* EESingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F225E /* EESingleton.m */; };
 		F465B452153B5248004F2262 /* NSThread+Reusabilitee.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F2261 /* NSThread+Reusabilitee.m */; };
 		F465B452153B5248004F226A /* LMSerialConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F2269 /* LMSerialConnection.m */; };
+		F4907682153C9C74003879C6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4907681153C9C74003879C6 /* IOKit.framework */; };
+		F4907682153C9C74003879C8 /* LMLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = F4907682153C9C74003879C7 /* LMLauncher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +39,7 @@
 		F465B438153B4679004F2251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		F465B43A153B4679004F2251 /* LMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMAppDelegate.h; sourceTree = "<group>"; };
 		F465B43B153B4679004F2251 /* LMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMAppDelegate.m; sourceTree = "<group>"; };
-		F465B43E153B4679004F2251 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = ../en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F465B43E153B4679004F2251 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = ../en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F465B445153B47AE004F2252 /* LMLaunchPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLaunchPad.m; sourceTree = "<group>"; };
 		F465B445153B47AE004F2254 /* LMLaunchPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLaunchPad.h; sourceTree = "<group>"; };
 		F465B44E153B5248004F2251 /* LMLaunchPadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLaunchPadController.h; sourceTree = "<group>"; };
@@ -54,6 +56,10 @@
 		F465B452153B5248004F2261 /* NSThread+Reusabilitee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+Reusabilitee.m"; sourceTree = "<group>"; };
 		F465B452153B5248004F2269 /* LMSerialConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSerialConnection.m; sourceTree = "<group>"; };
 		F465B452153B5248004F226B /* LMSerialConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSerialConnection.h; sourceTree = "<group>"; };
+		F4907681153C9C74003879C6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		F4907682153C9C74003879C7 /* LMLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLauncher.m; sourceTree = "<group>"; };
+		F4907682153C9C74003879C9 /* LMLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLauncher.h; sourceTree = "<group>"; };
+		F4907682153C9C74003879CA /* LMSerialConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSerialConnectionDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F465B445153B47AE004F2251 /* AppKit.framework in Frameworks */,
+				F4907682153C9C74003879C6 /* IOKit.framework in Frameworks */,
 				F465B429153B4679004F2251 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +79,7 @@
 		F465B419153B4679004F2251 = {
 			isa = PBXGroup;
 			children = (
+				F4907681153C9C74003879C6 /* IOKit.framework */,
 				F465B42E153B4679004F2251 /* LaunchMeister */,
 				F465B427153B4679004F2251 /* Frameworks */,
 				F465B425153B4679004F2251 /* Products */,
@@ -146,6 +154,9 @@
 		F465B452153B5248004F2253 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F4907682153C9C74003879CA /* LMSerialConnectionDelegate.h */,
+				F4907682153C9C74003879C9 /* LMLauncher.h */,
+				F4907682153C9C74003879C7 /* LMLauncher.m */,
 				F465B452153B5248004F226B /* LMSerialConnection.h */,
 				F465B452153B5248004F2269 /* LMSerialConnection.m */,
 				F465B452153B5248004F2256 /* LMLaunchMeisterModel.h */,
@@ -275,6 +286,7 @@
 				F465B452153B5248004F225F /* EESingleton.m in Sources */,
 				F465B452153B5248004F2262 /* NSThread+Reusabilitee.m in Sources */,
 				F465B452153B5248004F226A /* LMSerialConnection.m in Sources */,
+				F4907682153C9C74003879C8 /* LMLauncher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +312,7 @@
 		F465B43D153B4679004F2251 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F465B43E153B4679004F2251 /* en */,
+				F465B43E153B4679004F2251 /* MainMenu.xib */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";

@@ -9,16 +9,17 @@
 #import "LMAppDelegate.h"
 #import "LMLaunchPadController.h"
 #import "LMLaunchMeisterModel.h"
-#import "LMSerialConnection.h"
+#import "LMLauncher.h"
+
+@interface LMAppDelegate ()
+@property(nonatomic, strong) LMLauncher *launcher;
+@end
 
 @implementation LMAppDelegate
-{
-    LMSerialConnection *serialConnection;
-}
 
 @synthesize window = _window;
 @synthesize launchPads = _launchPads;
-@synthesize serialConnection = serialConnection_;
+@synthesize launcher = _launcher;
 
 - (void)applicationWillTerminate:(NSNotification *)notification
 {
@@ -33,7 +34,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 
-    self.serialConnection = [[LMSerialConnection instance] init];
+    self.launcher = [LMLauncher instance];
     NSArray *previousFiles = [LMLaunchMeisterModel getLaunchPads];
 
     int numberOfLaunchPads = 8;
@@ -58,8 +59,6 @@
         [self.window.contentView addSubview:dropAreaController.view];
     }
 
-
-    [self.serialConnection saveLaunchPads:self.launchPads];
-
+    [self.launcher setLaunchPads:self.launchPads];
 }
 @end
