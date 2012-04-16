@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F465B429153B4679004F2251 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F465B428153B4679004F2251 /* Cocoa.framework */; };
+		F465B433153B4679004F2251 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F465B431153B4679004F2251 /* InfoPlist.strings */; };
+		F465B435153B4679004F2251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B434153B4679004F2251 /* main.m */; };
+		F465B439153B4679004F2251 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F465B437153B4679004F2251 /* Credits.rtf */; };
+		F465B43C153B4679004F2251 /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B43B153B4679004F2251 /* TTAppDelegate.m */; };
+		F465B43F153B4679004F2251 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F465B43D153B4679004F2251 /* MainMenu.xib */; };
+		F465B445153B47AE004F2251 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F465B42B153B4679004F2251 /* AppKit.framework */; };
+		F465B445153B47AE004F2253 /* TTDropArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B445153B47AE004F2252 /* TTDropArea.m */; };
+		F465B451153B5248004F2251 /* TTDropAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B44F153B5248004F2251 /* TTDropAreaViewController.m */; };
+		F465B452153B5248004F2251 /* TTDropAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F465B450153B5248004F2251 /* TTDropAreaViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F465B424153B4679004F2251 /* LaunchMeister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchMeister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F465B428153B4679004F2251 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F465B42B153B4679004F2251 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F465B42C153B4679004F2251 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F465B42D153B4679004F2251 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F465B430153B4679004F2251 /* LaunchMeister-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaunchMeister-Info.plist"; sourceTree = "<group>"; };
+		F465B432153B4679004F2251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F465B434153B4679004F2251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F465B436153B4679004F2251 /* LaunchMeister-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaunchMeister-Prefix.pch"; sourceTree = "<group>"; };
+		F465B438153B4679004F2251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F465B43A153B4679004F2251 /* TTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTAppDelegate.h; sourceTree = "<group>"; };
+		F465B43B153B4679004F2251 /* TTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
+		F465B43E153B4679004F2251 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F465B445153B47AE004F2252 /* TTDropArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDropArea.m; sourceTree = "<group>"; };
+		F465B445153B47AE004F2254 /* TTDropArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDropArea.h; sourceTree = "<group>"; };
+		F465B44E153B5248004F2251 /* TTDropAreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDropAreaViewController.h; sourceTree = "<group>"; };
+		F465B44F153B5248004F2251 /* TTDropAreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDropAreaViewController.m; sourceTree = "<group>"; };
+		F465B450153B5248004F2251 /* TTDropAreaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTDropAreaViewController.xib; sourceTree = "<group>"; };
+		F465B452153B5248004F2252 /* TTDropAreaProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDropAreaProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F465B421153B4679004F2251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F465B445153B47AE004F2251 /* AppKit.framework in Frameworks */,
+				F465B429153B4679004F2251 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F465B419153B4679004F2251 = {
+			isa = PBXGroup;
+			children = (
+				F465B42E153B4679004F2251 /* LaunchMeister */,
+				F465B427153B4679004F2251 /* Frameworks */,
+				F465B425153B4679004F2251 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F465B425153B4679004F2251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F465B424153B4679004F2251 /* LaunchMeister.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F465B427153B4679004F2251 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F465B428153B4679004F2251 /* Cocoa.framework */,
+				F465B42A153B4679004F2251 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F465B42A153B4679004F2251 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F465B42B153B4679004F2251 /* AppKit.framework */,
+				F465B42C153B4679004F2251 /* CoreData.framework */,
+				F465B42D153B4679004F2251 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F465B42E153B4679004F2251 /* LaunchMeister */ = {
+			isa = PBXGroup;
+			children = (
+				F465B43A153B4679004F2251 /* TTAppDelegate.h */,
+				F465B43B153B4679004F2251 /* TTAppDelegate.m */,
+				F465B43D153B4679004F2251 /* MainMenu.xib */,
+				F465B42F153B4679004F2251 /* Supporting Files */,
+				F465B445153B47AE004F2255 /* DropArea */,
+			);
+			path = LaunchMeister;
+			sourceTree = "<group>";
+		};
+		F465B42F153B4679004F2251 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F465B430153B4679004F2251 /* LaunchMeister-Info.plist */,
+				F465B431153B4679004F2251 /* InfoPlist.strings */,
+				F465B434153B4679004F2251 /* main.m */,
+				F465B436153B4679004F2251 /* LaunchMeister-Prefix.pch */,
+				F465B437153B4679004F2251 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F465B445153B47AE004F2255 /* DropArea */ = {
+			isa = PBXGroup;
+			children = (
+				F465B452153B5248004F2252 /* TTDropAreaProtocol.h */,
+				F465B445153B47AE004F2252 /* TTDropArea.m */,
+				F465B445153B47AE004F2254 /* TTDropArea.h */,
+				F465B44E153B5248004F2251 /* TTDropAreaViewController.h */,
+				F465B44F153B5248004F2251 /* TTDropAreaViewController.m */,
+				F465B450153B5248004F2251 /* TTDropAreaViewController.xib */,
+			);
+			path = DropArea;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F465B423153B4679004F2251 /* LaunchMeister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F465B442153B4679004F2251 /* Build configuration list for PBXNativeTarget "LaunchMeister" */;
+			buildPhases = (
+				F465B420153B4679004F2251 /* Sources */,
+				F465B421153B4679004F2251 /* Frameworks */,
+				F465B422153B4679004F2251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaunchMeister;
+			productName = LaunchMeister;
+			productReference = F465B424153B4679004F2251 /* LaunchMeister.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F465B41B153B4679004F2251 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TT;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Twelve Twenty";
+			};
+			buildConfigurationList = F465B41E153B4679004F2251 /* Build configuration list for PBXProject "LaunchMeister" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F465B419153B4679004F2251;
+			productRefGroup = F465B425153B4679004F2251 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F465B423153B4679004F2251 /* LaunchMeister */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F465B422153B4679004F2251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F465B433153B4679004F2251 /* InfoPlist.strings in Resources */,
+				F465B439153B4679004F2251 /* Credits.rtf in Resources */,
+				F465B43F153B4679004F2251 /* MainMenu.xib in Resources */,
+				F465B452153B5248004F2251 /* TTDropAreaViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F465B420153B4679004F2251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F465B435153B4679004F2251 /* main.m in Sources */,
+				F465B43C153B4679004F2251 /* TTAppDelegate.m in Sources */,
+				F465B445153B47AE004F2253 /* TTDropArea.m in Sources */,
+				F465B451153B5248004F2251 /* TTDropAreaViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F465B431153B4679004F2251 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F465B432153B4679004F2251 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F465B437153B4679004F2251 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F465B438153B4679004F2251 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F465B43D153B4679004F2251 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F465B43E153B4679004F2251 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F465B440153B4679004F2251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F465B441153B4679004F2251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F465B443153B4679004F2251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaunchMeister/LaunchMeister-Prefix.pch";
+				INFOPLIST_FILE = "LaunchMeister/LaunchMeister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F465B444153B4679004F2251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LaunchMeister/LaunchMeister-Prefix.pch";
+				INFOPLIST_FILE = "LaunchMeister/LaunchMeister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F465B41E153B4679004F2251 /* Build configuration list for PBXProject "LaunchMeister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F465B440153B4679004F2251 /* Debug */,
+				F465B441153B4679004F2251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F465B442153B4679004F2251 /* Build configuration list for PBXNativeTarget "LaunchMeister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F465B443153B4679004F2251 /* Debug */,
+				F465B444153B4679004F2251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F465B41B153B4679004F2251 /* Project object */;
+}
