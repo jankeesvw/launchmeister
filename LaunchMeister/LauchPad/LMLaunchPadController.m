@@ -46,6 +46,7 @@
         self.title.stringValue = [[self.selectedFile path] lastPathComponent];
     } else
     {
+        self.image.image = [[NSImage alloc] init];
         self.title.stringValue = @"Drop a file";
     }
 }
