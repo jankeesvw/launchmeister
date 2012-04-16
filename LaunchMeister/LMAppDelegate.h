@@ -16,6 +16,9 @@
 
 @property(assign) IBOutlet NSWindow *window;
 @property(nonatomic, strong) NSMutableArray *launchPads;
+- (IBAction)didClickSave:(id)sender;
+- (IBAction)didClickNew:(id)sender;
+
 
 @end
 

@@ -13,6 +13,7 @@
 
 @interface LMAppDelegate ()
 @property(nonatomic, strong) LMLauncher *launcher;
+- (NSArray *)getCurrentUrls;
 @end
 
 @implementation LMAppDelegate
@@ -24,17 +25,31 @@
 - (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename
 {
     NSLog(@"openFile: %@", filename);
+
+    NSArray *selectedFiles = [LMLaunchMeisterModel loadLaunchPadsFromPath:filename];
+
+    int i = 0;
+    for (LMLaunchPadController *launchPad in self.launchPads)
+    {
+        NSURL *url = [selectedFiles count] > i ? [selectedFiles objectAtIndex:i] : [NSURL URLWithString:@""];
+        launchPad.selectedFile = url;
+        i++;
+    }
+
+    [self updateWindowTitle];
+
     return YES;
 }
 
+
 - (void)applicationWillTerminate:(NSNotification *)notification
 {
-    NSMutableArray *selectedFiles = [NSMutableArray array];
-    for (LMLaunchPadController *launchPad in self.launchPads)
-    {
-        [selectedFiles addObject:launchPad.selectedFile];
-    }
-    [LMLaunchMeisterModel saveLaunchPads:selectedFiles];
+    [LMLaunchMeisterModel saveLaunchPadsToCurrentFile:[self getCurrentUrls]];
+}
+
+- (void)updateWindowTitle
+{
+    [self.window setTitle:[NSString stringWithFormat:@"LaunchMeister - %@", [LMLaunchMeisterModel getPreviousPath]]];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -66,5 +81,55 @@
     }
 
     [self.launcher setLaunchPads:self.launchPads];
+
+    [self updateWindowTitle];
+}
+
+- (IBAction)didClickSave:(id)sender
+{
+    NSSavePanel *createPanel = [[NSSavePanel alloc] init];
+    [createPanel setCanCreateDirectories:YES];
+    int result = [createPanel runModal];
+    if (result == 1)
+    {
+        [LMLaunchMeisterModel saveLaunchPads:[self getCurrentUrls] toUrl:[createPanel URL]];
+    }
+}
+
+- (void)startNewFile
+{
+    NSSavePanel *createPanel = [[NSSavePanel alloc] init];
+    [createPanel setCanCreateDirectories:YES];
+    int result = [createPanel runModal];
+    if (result == 1)
+    {
+
+        [LMLaunchMeisterModel saveLaunchPads:[NSArray array] toUrl:[createPanel URL]];
+
+        int i = 0;
+        for (LMLaunchPadController *launchPad in self.launchPads)
+        {
+            launchPad.selectedFile = [NSURL URLWithString:@""];
+            i++;
+        }
+    }
+
+    [self updateWindowTitle];
+}
+
+- (IBAction)didClickNew:(id)sender
+{
+    [self startNewFile];
+}
+
+
+- (NSArray *)getCurrentUrls
+{
+    NSMutableArray *selectedFiles = [NSMutableArray array];
+    for (LMLaunchPadController *launchPad in self.launchPads)
+    {
+        [selectedFiles addObject:launchPad.selectedFile];
+    }
+    return selectedFiles;
 }
 @end
