@@ -21,6 +21,12 @@
 @synthesize launchPads = _launchPads;
 @synthesize launcher = _launcher;
 
+- (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename
+{
+    NSLog(@"openFile: %@", filename);
+    return YES;
+}
+
 - (void)applicationWillTerminate:(NSNotification *)notification
 {
     NSMutableArray *selectedFiles = [NSMutableArray array];
