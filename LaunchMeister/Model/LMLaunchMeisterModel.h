@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "EESingleton.h"
 
-@interface TTLaunchMeisterModel : EESingleton
+@interface LMLaunchMeisterModel : EESingleton
 
 + (void) saveLaunchPads:(NSArray *)launchPads;
 

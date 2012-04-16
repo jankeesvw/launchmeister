@@ -1,11 +1,11 @@
-#import "TTLaunchMeisterModel.h"
+#import "LMLaunchMeisterModel.h"
 
-@interface TTLaunchMeisterModel ()
+@interface LMLaunchMeisterModel ()
 + (NSString *)folderPath;
 + (NSString *)filePath;
 @end
 
-@implementation TTLaunchMeisterModel
+@implementation LMLaunchMeisterModel
 
 + (void)saveLaunchPads:(NSArray *)launchPads
 {

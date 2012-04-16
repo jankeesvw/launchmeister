@@ -17,10 +17,11 @@
 		F465B445153B47AE004F2253 /* LMLaunchPad.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B445153B47AE004F2252 /* LMLaunchPad.m */; };
 		F465B451153B5248004F2251 /* LMLaunchPadController.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B44F153B5248004F2251 /* LMLaunchPadController.m */; };
 		F465B452153B5248004F2251 /* LMLaunchPadController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F465B450153B5248004F2251 /* LMLaunchPadController.xib */; };
-		F465B452153B5248004F2255 /* TTLaunchMeisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F2254 /* TTLaunchMeisterModel.m */; };
+		F465B452153B5248004F2255 /* LMLaunchMeisterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F2254 /* LMLaunchMeisterModel.m */; };
 		F465B452153B5248004F225B /* EELog.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F225A /* EELog.m */; };
 		F465B452153B5248004F225F /* EESingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F225E /* EESingleton.m */; };
 		F465B452153B5248004F2262 /* NSThread+Reusabilitee.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F2261 /* NSThread+Reusabilitee.m */; };
+		F465B452153B5248004F226A /* LMSerialConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F2269 /* LMSerialConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,14 +44,16 @@
 		F465B44F153B5248004F2251 /* LMLaunchPadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLaunchPadController.m; sourceTree = "<group>"; };
 		F465B450153B5248004F2251 /* LMLaunchPadController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMLaunchPadController.xib; sourceTree = "<group>"; };
 		F465B452153B5248004F2252 /* LMLaunchPadProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLaunchPadProtocol.h; sourceTree = "<group>"; };
-		F465B452153B5248004F2254 /* TTLaunchMeisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLaunchMeisterModel.m; sourceTree = "<group>"; };
-		F465B452153B5248004F2256 /* TTLaunchMeisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLaunchMeisterModel.h; sourceTree = "<group>"; };
+		F465B452153B5248004F2254 /* LMLaunchMeisterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLaunchMeisterModel.m; sourceTree = "<group>"; };
+		F465B452153B5248004F2256 /* LMLaunchMeisterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLaunchMeisterModel.h; sourceTree = "<group>"; };
 		F465B452153B5248004F2259 /* EELog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EELog.h; sourceTree = "<group>"; };
 		F465B452153B5248004F225A /* EELog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EELog.m; sourceTree = "<group>"; };
 		F465B452153B5248004F225D /* EESingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EESingleton.h; sourceTree = "<group>"; };
 		F465B452153B5248004F225E /* EESingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EESingleton.m; sourceTree = "<group>"; };
 		F465B452153B5248004F2260 /* NSThread+Reusabilitee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSThread+Reusabilitee.h"; sourceTree = "<group>"; };
 		F465B452153B5248004F2261 /* NSThread+Reusabilitee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSThread+Reusabilitee.m"; sourceTree = "<group>"; };
+		F465B452153B5248004F2269 /* LMSerialConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSerialConnection.m; sourceTree = "<group>"; };
+		F465B452153B5248004F226B /* LMSerialConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSerialConnection.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +146,10 @@
 		F465B452153B5248004F2253 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F465B452153B5248004F2256 /* TTLaunchMeisterModel.h */,
-				F465B452153B5248004F2254 /* TTLaunchMeisterModel.m */,
+				F465B452153B5248004F226B /* LMSerialConnection.h */,
+				F465B452153B5248004F2269 /* LMSerialConnection.m */,
+				F465B452153B5248004F2256 /* LMLaunchMeisterModel.h */,
+				F465B452153B5248004F2254 /* LMLaunchMeisterModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,10 +270,11 @@
 				F465B43C153B4679004F2251 /* LMAppDelegate.m in Sources */,
 				F465B445153B47AE004F2253 /* LMLaunchPad.m in Sources */,
 				F465B451153B5248004F2251 /* LMLaunchPadController.m in Sources */,
-				F465B452153B5248004F2255 /* TTLaunchMeisterModel.m in Sources */,
+				F465B452153B5248004F2255 /* LMLaunchMeisterModel.m in Sources */,
 				F465B452153B5248004F225B /* EELog.m in Sources */,
 				F465B452153B5248004F225F /* EESingleton.m in Sources */,
 				F465B452153B5248004F2262 /* NSThread+Reusabilitee.m in Sources */,
+				F465B452153B5248004F226A /* LMSerialConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

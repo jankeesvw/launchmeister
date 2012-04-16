@@ -8,12 +8,17 @@
 
 #import "LMAppDelegate.h"
 #import "LMLaunchPadController.h"
-#import "TTLaunchMeisterModel.h"
+#import "LMLaunchMeisterModel.h"
+#import "LMSerialConnection.h"
 
 @implementation LMAppDelegate
+{
+    LMSerialConnection *serialConnection;
+}
 
 @synthesize window = _window;
 @synthesize launchPads = _launchPads;
+@synthesize serialConnection = serialConnection_;
 
 - (void)applicationWillTerminate:(NSNotification *)notification
 {
@@ -22,13 +27,15 @@
     {
         [selectedFiles addObject:launchPad.selectedFile];
     }
-    [TTLaunchMeisterModel saveLaunchPads:selectedFiles];
+    [LMLaunchMeisterModel saveLaunchPads:selectedFiles];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 
-    NSArray *previousFiles = [TTLaunchMeisterModel getLaunchPads];
+    self.serialConnection = [[LMSerialConnection instance] init];
+
+    NSArray *previousFiles = [LMLaunchMeisterModel getLaunchPads];
 
     int numberOfLaunchPads = 8;
 
