@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F446FDEB153D3DC500312324 /* SmallLEDYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F446FDEA153D3DC500312324 /* SmallLEDYellow.png */; };
+		F446FDEE153D432E00312324 /* cancel_cleanclick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F446FDED153D432E00312324 /* cancel_cleanclick.mp3 */; };
 		F45650CC153CAC08001EE3AD /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F45650CB153CAC08001EE3AD /* Icon.icns */; };
 		F465B429153B4679004F2251 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F465B428153B4679004F2251 /* Cocoa.framework */; };
 		F465B433153B4679004F2251 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F465B431153B4679004F2251 /* InfoPlist.strings */; };
@@ -25,9 +27,13 @@
 		F465B452153B5248004F226A /* LMSerialConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F2269 /* LMSerialConnection.m */; };
 		F4907682153C9C74003879C6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4907681153C9C74003879C6 /* IOKit.framework */; };
 		F4907682153C9C74003879C8 /* LMLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = F4907682153C9C74003879C7 /* LMLauncher.m */; };
+		F4907682153C9C74003879CC /* SmallLEDRed.png in Resources */ = {isa = PBXBuildFile; fileRef = F4907682153C9C74003879CB /* SmallLEDRed.png */; };
+		F4907682153C9C74003879CE /* SmallLEDGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F4907682153C9C74003879CD /* SmallLEDGreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F446FDEA153D3DC500312324 /* SmallLEDYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallLEDYellow.png; sourceTree = "<group>"; };
+		F446FDED153D432E00312324 /* cancel_cleanclick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cancel_cleanclick.mp3; sourceTree = "<group>"; };
 		F45650CB153CAC08001EE3AD /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		F465B424153B4679004F2251 /* LaunchMeister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchMeister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F465B428153B4679004F2251 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -62,6 +68,8 @@
 		F4907682153C9C74003879C7 /* LMLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLauncher.m; sourceTree = "<group>"; };
 		F4907682153C9C74003879C9 /* LMLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLauncher.h; sourceTree = "<group>"; };
 		F4907682153C9C74003879CA /* LMSerialConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSerialConnectionDelegate.h; sourceTree = "<group>"; };
+		F4907682153C9C74003879CB /* SmallLEDRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallLEDRed.png; sourceTree = "<group>"; };
+		F4907682153C9C74003879CD /* SmallLEDGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallLEDGreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,10 @@
 		F465B42F153B4679004F2251 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F446FDED153D432E00312324 /* cancel_cleanclick.mp3 */,
+				F446FDEA153D3DC500312324 /* SmallLEDYellow.png */,
+				F4907682153C9C74003879CD /* SmallLEDGreen.png */,
+				F4907682153C9C74003879CB /* SmallLEDRed.png */,
 				F465B430153B4679004F2251 /* LaunchMeister-Info.plist */,
 				F465B431153B4679004F2251 /* InfoPlist.strings */,
 				F465B434153B4679004F2251 /* main.m */,
@@ -271,6 +283,10 @@
 				F465B43F153B4679004F2251 /* MainMenu.xib in Resources */,
 				F465B452153B5248004F2251 /* LMLaunchPadController.xib in Resources */,
 				F45650CC153CAC08001EE3AD /* Icon.icns in Resources */,
+				F4907682153C9C74003879CC /* SmallLEDRed.png in Resources */,
+				F4907682153C9C74003879CE /* SmallLEDGreen.png in Resources */,
+				F446FDEB153D3DC500312324 /* SmallLEDYellow.png in Resources */,
+				F446FDEE153D432E00312324 /* cancel_cleanclick.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

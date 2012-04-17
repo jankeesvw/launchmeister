@@ -21,7 +21,6 @@
 + (NSString *)getPreviousPath
 {
     NSString *previousPath = (NSString *) [[NSUserDefaults standardUserDefaults] objectForKey:@"path"];
-    NSLog(@"getPreviousPath: %@", previousPath);
     return previousPath;
 }
 
@@ -34,7 +33,6 @@
 
     [[NSUserDefaults standardUserDefaults] setObject:path forKey:@"path"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    NSLog(@"setPreviousPath: %@ - %@", [self getPreviousPath], path);
 }
 
 + (void)saveLaunchPads:(NSArray *)launchPads toUrl:(NSURL *)url

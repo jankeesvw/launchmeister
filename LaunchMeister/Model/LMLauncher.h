@@ -8,4 +8,5 @@
 
 @property(nonatomic, strong) NSMutableArray *launchPads;
 
+@property(nonatomic, assign) NSButton *connectionStatusDisplay;
 @end

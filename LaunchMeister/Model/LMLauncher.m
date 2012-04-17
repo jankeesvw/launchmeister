@@ -4,12 +4,14 @@
 
 @interface LMLauncher ()
 @property(nonatomic, strong) LMSerialConnection *connection;
+- (void)playSound;
 - (NSArray *)getAddresses;
 @end
 
 @implementation LMLauncher
 @synthesize connection = _connection;
 @synthesize launchPads = _launchPads;
+@synthesize connectionStatusDisplay = _connectionStatusDisplay;
 
 - (id)init
 {
@@ -23,6 +25,14 @@
     return self;
 }
 
+
+- (void)playSound
+{
+    NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"cancel_cleanclick" ofType:@"mp3"];
+    NSSound *sound = [[NSSound alloc] initWithContentsOfFile:resourcePath byReference:YES];
+    [sound play];
+}
+
 - (void)didReceiveSignal:(NSString *)address
 {
     for (LMLaunchPadController *pad in self.launchPads)
@@ -32,11 +42,50 @@
             NSLog(@"Launch pad at address: %@ with file: %@", address, [pad.selectedFile path]);
             [[NSWorkspace sharedWorkspace] launchApplication:[pad.selectedFile path]];
             [[NSWorkspace sharedWorkspace] openFile:[pad.selectedFile path]];
+            [self playSound];
             return;
         }
     }
     NSLog(@"no launch pad for: %@", address);
 }
+
+- (void)connectionFailed
+{
+    [self updateConnectionDisplayToCurrentState];
+}
+
+- (void)connectionEstablished
+{
+    [self updateConnectionDisplayToCurrentState];
+}
+
+- (void)restartConnection
+{
+    [[self connectionStatusDisplay] setImage:[NSImage imageNamed:@"SmallLEDYellow"]];
+
+    [self.connection resetConnection];
+}
+
+- (void)setConnectionStatusDisplay:(NSButton *)aConnectionStatusDisplay
+{
+    _connectionStatusDisplay = aConnectionStatusDisplay;
+
+    [aConnectionStatusDisplay setTarget:self];
+    [aConnectionStatusDisplay setAction:@selector(restartConnection)];
+}
+
+- (void)updateConnectionDisplayToCurrentState
+{
+
+    if (self.connection.connected)
+    {
+        [[self connectionStatusDisplay] setImage:[NSImage imageNamed:@"SmallLEDGreen"]];
+    } else
+    {
+        [[self connectionStatusDisplay] setImage:[NSImage imageNamed:@"SmallLEDRed"]];
+    }
+}
+
 
 - (void)setLaunchPads:(NSMutableArray *)aLaunchPads
 {

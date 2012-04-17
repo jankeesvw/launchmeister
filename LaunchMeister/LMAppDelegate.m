@@ -80,6 +80,11 @@
         [self.window.contentView addSubview:dropAreaController.view];
     }
 
+    NSButton *button = [[NSButton alloc] initWithFrame:NSMakeRect(0, 0, 16, 16)];
+    button.image = [NSImage imageNamed:@"SmallLEDYellow"];
+    self.launcher.connectionStatusDisplay = button;
+    [self.window.contentView addSubview:button];
+
     [self.launcher setLaunchPads:self.launchPads];
 
     [self updateWindowTitle];

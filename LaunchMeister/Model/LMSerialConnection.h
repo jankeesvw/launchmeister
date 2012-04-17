@@ -13,4 +13,7 @@
 
 @property(nonatomic, assign) id <LMSerialConnectionDelegate> delegate;
 
+@property(nonatomic, assign) BOOL connected;
+- (void)resetConnection;
+- (void)resetConnectionWithDelay:(float)delay;
 @end
