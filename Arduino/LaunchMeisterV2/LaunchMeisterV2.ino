@@ -1,138 +1,68 @@
-/* LED Blink, Teensyduino Tutorial #1
- http://www.pjrc.com/teensy/tutorial.html
- 
- This example code is in the public domain.
- */
 
-const int ledPin = PIN_D1;   // Teensy has LED on 11, Teensy++ on 6
+const int PIN_BUTTON_1 = PIN_B0;
+const int PIN_BUTTON_2 = PIN_B1;
+const int PIN_BUTTON_3 = PIN_B2;
+const int PIN_BUTTON_4 = PIN_B3;
+
+const int PIN_SWITCH_A = PIN_B7;
+const int PIN_SWITCH_B = PIN_D0;
+
+const int PIN_LED = PIN_D1;
+
 
 int button1 = 0; 
 int button2 = 0; 
 int button3 = 0; 
 int button4 = 0;
+int switchA = 0; 
+int switchB = 0;
 
-int button5 = 0; 
-int button6 = 0;
+String currentKeyCombo = "-1";
 
+void setup() { 
+  //led
+  pinMode(PIN_LED, OUTPUT);
 
-String offA = "A0000";
-String offB = "B0000";
-String output = "0000";
-String previousOutput = "0000";
+  //regular switches
+  pinMode(PIN_BUTTON_1, INPUT_PULLUP);
+  pinMode(PIN_BUTTON_2, INPUT_PULLUP);
+  pinMode(PIN_BUTTON_3, INPUT_PULLUP);
+  pinMode(PIN_BUTTON_4, INPUT_PULLUP);
 
-// the setup() method runs once, when the sketch starts
+  // A - B switch
+  pinMode(PIN_SWITCH_A, INPUT_PULLUP);
+  pinMode(PIN_SWITCH_B, INPUT_PULLUP);  
 
-void setup() {
-  // initialize the digital pin as an output.
-  pinMode(ledPin, OUTPUT);
-  pinMode(PIN_B0, INPUT_PULLUP);
-  pinMode(PIN_B1, INPUT_PULLUP);
-  pinMode(PIN_B2, INPUT_PULLUP);
-  pinMode(PIN_B3, INPUT_PULLUP);
-
-  pinMode(PIN_B7, INPUT);
-  pinMode(PIN_D0, INPUT);
-
+  // start serial output @ 9600 baud
   Serial.begin(9600);
 }
 
-// the loop() methor runs over and over again,
-// as long as the board has power
-
 void loop() {
-  //  digitalWrite(ledPin, HIGH);   // set the LED on
-  //  delay(100);                  // wait for a second
-  //  digitalWrite(ledPin, LOW);    // set the LED off
-  //  delay(100);                  // wait for a second
-  //  if (digitalRead(PIN_B0)) {
-  // do this if C2 is high
-  //  digitalWrite(ledPin, LOW);
-  //  } else {
-  //   digitalWrite(ledPin, HIGH);
-  // do this if C2 is low
-  //  }
-  //  output = ""
-  output = "";
 
-  button1 = digitalRead(PIN_B0);
-  button2 = digitalRead(PIN_B1);
-  button3 = digitalRead(PIN_B2);
-  button4 = digitalRead(PIN_B3);
+  currentKeyCombo = "";
 
-  button5 = digitalRead(PIN_B7);
-  button6 = digitalRead(PIN_D0);
-  //  Serial.println("Okay--");
-  //  Serial.println(button1);
-  //  Serial.println(button2);
+  button1 = digitalRead(PIN_BUTTON_1);
+  button2 = digitalRead(PIN_BUTTON_2);
+  button3 = digitalRead(PIN_BUTTON_3);
+  button4 = digitalRead(PIN_BUTTON_4);
 
-  if(button5 == 1){
-    output += "B";
-  }
-  else{
-    output += "A";
-  }
+  switchA = digitalRead(PIN_SWITCH_A);
+  switchB = digitalRead(PIN_SWITCH_B);
+
+  currentKeyCombo += switchA == 0 ? "A" : "B";
+  currentKeyCombo += button1 == 0 ? "1" : "0";
+  currentKeyCombo += button2 == 0 ? "1" : "0";
+  currentKeyCombo += button3 == 0 ? "1" : "0";
+  currentKeyCombo += button4 == 0 ? "1" : "0";
+  
 
 
+  Serial.println(currentKeyCombo);
 
-
-  if(button1 == 0){
-    output += "1";
-    digitalWrite(ledPin, HIGH); 
-  }
-  else{
-    output += "0";
-    digitalWrite(ledPin, LOW); 
-  }
-  if(button2 == 0){
-    output += "1";
-  }
-  else{
-    output += "0";
-  }
-  if(button3 == 0){
-    output += "1";
-  }
-  else{
-    output += "0";
-  }
-  if(button4 == 0){
-    output += "1";
-  }
-  else{
-    output += "0";
-  }
-
-  //  if(button1 == 0 && button2 == 0 && button3 == 0 && button4 == 0){
-  //      digitalWrite(ledPin, HIGH);  
-  //    }else{
-  //      digitalWrite(ledPin, LOW);  
-  //    }
-
-  //if(previousOutput != output){
-  //  
-  //    Serial.println(output);
-  //    previousOutput = output;
-  //}
-  if(offA != output && offB != output){
-    Serial.println(output);
-    digitalWrite(ledPin, HIGH);  
-  }
-  else{
-    digitalWrite(ledPin, LOW);      
-  }
-
-  //if (button1 == H) {
-  //    if(digitalRead(PIN_B1)){
-  //      digitalWrite(ledPin, HIGH);  
-  //    }else{
-  //      digitalWrite(ledPin, LOW);  
-  //    }
-  //  }else{
-  //    digitalWrite(ledPin, LOW);
-  //  }
-  delay(50);
+  delay(100);
 
 }
+
 
 
 
