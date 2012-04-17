@@ -106,7 +106,7 @@
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
 								</object>
-								<object class="NSMenuItem" id="996757826">
+								<object class="NSMenuItem" id="168964281">
 									<reference key="NSMenu" ref="720053764"/>
 									<string key="NSTitle">Save</string>
 									<string key="NSKeyEquiv">s</string>
@@ -154,7 +154,6 @@
 					<string key="NSFrameSize">{800, 400}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
-					<reference key="NSNextKeyView"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
@@ -245,7 +244,7 @@
 					<object class="IBActionConnection" key="connection">
 						<string key="label">didClickSave:</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="996757826"/>
+						<reference key="destination" ref="168964281"/>
 					</object>
 					<int key="connectionID">587</int>
 				</object>
@@ -308,7 +307,7 @@
 							<reference ref="722745758"/>
 							<reference ref="705341025"/>
 							<reference ref="776162233"/>
-							<reference ref="996757826"/>
+							<reference ref="168964281"/>
 						</array>
 						<reference key="parent" ref="379814623"/>
 					</object>
@@ -378,7 +377,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">585</int>
-						<reference key="object" ref="996757826"/>
+						<reference key="object" ref="168964281"/>
 						<reference key="parent" ref="720053764"/>
 					</object>
 				</array>

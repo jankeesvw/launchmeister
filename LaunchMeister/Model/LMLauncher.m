@@ -1,6 +1,7 @@
 #import "LMLauncher.h"
 #import "LMSerialConnection.h"
 #import "LMLaunchPadController.h"
+#import "LMLauncherDelegate.h"
 
 @interface LMLauncher ()
 @property(nonatomic, strong) LMSerialConnection *connection;
@@ -12,6 +13,7 @@
 @synthesize connection = _connection;
 @synthesize launchPads = _launchPads;
 @synthesize connectionStatusDisplay = _connectionStatusDisplay;
+@synthesize delegate = _delegate;
 
 - (id)init
 {
@@ -35,6 +37,12 @@
 
 - (void)didReceiveSignal:(NSString *)address
 {
+    if ([address isEqualToString:@"A1111"] || [address isEqualToString:@"B1111"])
+    {
+        [self.delegate triggerShowMainWindow];
+        NSLog(@"Open main window triggered");
+        return;
+    }
     for (LMLaunchPadController *pad in self.launchPads)
     {
         if ([pad.address isEqualToString:address])
