@@ -9,6 +9,7 @@ const int PIN_SWITCH_B = PIN_D0;
 
 const int PIN_LED = PIN_D1;
 
+const int ACTIVATION_DURATION = 3000;
 
 int button1 = 0; 
 int button2 = 0; 
@@ -17,7 +18,11 @@ int button4 = 0;
 int switchA = 0; 
 int switchB = 0;
 
+int triggerTimer = 0;
+
 String currentKeyCombo = "-1";
+String lastKeyCombo = "-1";
+String switchValue = "-1";
 
 void setup() { 
   //led
@@ -49,19 +54,42 @@ void loop() {
   switchA = digitalRead(PIN_SWITCH_A);
   switchB = digitalRead(PIN_SWITCH_B);
 
-  currentKeyCombo += switchA == 0 ? "A" : "B";
+  switchValue = switchA == 0 ? "A" : "B";
+
   currentKeyCombo += button1 == 0 ? "1" : "0";
   currentKeyCombo += button2 == 0 ? "1" : "0";
   currentKeyCombo += button3 == 0 ? "1" : "0";
   currentKeyCombo += button4 == 0 ? "1" : "0";
-  
 
+  //ACTIVATION_DURATION
+  if(currentKeyCombo == "0000"){
+    triggerTimer = 0;
+    lastKeyCombo = "-1";
+    digitalWrite(PIN_LED, LOW);   
+  }
+  else{
+    triggerTimer++;
+    digitalWrite(PIN_LED, HIGH);    
+  }
 
-  Serial.println(currentKeyCombo);
+  if(triggerTimer > ACTIVATION_DURATION){
 
-  delay(100);
+    triggerTimer = 0;
+    if(currentKeyCombo == lastKeyCombo){
+      // ignore if the user hold the key down
+    }
+    else{
+      Serial.println(switchValue + currentKeyCombo);    
+      lastKeyCombo = currentKeyCombo;       
+    }
 
+  }
 }
+
+
+
+
+
 
 
 
