@@ -92,6 +92,7 @@
     }
 
     NSButton *button = [[NSButton alloc] initWithFrame:NSMakeRect(0, 0, 16, 16)];
+    button.bezelStyle = NSNoBorder;
     button.image = [NSImage imageNamed:@"SmallLEDYellow"];
     self.launcher.connectionStatusDisplay = button;
     [self.window.contentView addSubview:button];
@@ -124,7 +125,7 @@
 {
     NSRect statusBarViewRect = NSMakeRect(0, 0, 13, [[NSStatusBar systemStatusBar] thickness]);
 
-    self.statusBarItem = [[NSStatusBar systemStatusBar] statusItemWithLength:statusBarViewRect.size.width];
+    self.statusBarItem = [[NSStatusBar systemStatusBar] statusItemWithLength:statusBarViewRect.size.width + 10];
 
     self.statusItemView = [[LMStatusItemView alloc] initWithFrame:statusBarViewRect];
     self.statusItemView.delegate = self;
