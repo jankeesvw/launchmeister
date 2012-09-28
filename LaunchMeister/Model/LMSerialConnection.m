@@ -7,35 +7,61 @@
     bool readThreadRunning;
     struct termios gOriginalTTYAttrs; // Hold the original termios attributes so we can reset them on quit ( best practice )
 }
+- (void)startConnection;
 @end
 
 @implementation LMSerialConnection
 @synthesize delegate = _delegate;
+@synthesize connected = _connected;
 
 - (id)init
 {
     self = [super init];
     if (self)
     {
-
         serialFileDescriptor = -1;
         readThreadRunning = FALSE;
+        self.connected = NO;
 
-        NSString *result = [self openSerialPort:@"/dev/cu.usbmodem12341" baud:(speed_t) 9600];
-
-        if (result == nil)
-        {
-            NSLog(@"Serial connection established");
-            [self.delegate connectionEstablished];
-            [self performSelectorInBackground:@selector(incomingTextUpdateThread:) withObject:[NSThread currentThread]];
-        } else
-        {
-            NSLog(@"Error: starting serial connection: %@", result);
-            [self.delegate connectionFailed];
-        }
+        [self resetConnection];
     }
 
     return self;
+}
+
+- (void)startConnection
+{
+    NSLog(@"Start connection");
+    NSString *result = [self openSerialPort:@"/dev/cu.usbmodem12341" baud:(speed_t) 9600];
+
+    if (result == nil)
+    {
+        NSLog(@"Serial connection established");
+        self.connected = YES;
+        [self.delegate connectionEstablished];
+        [self performSelectorInBackground:@selector(incomingTextUpdateThread:) withObject:[NSThread currentThread]];
+    } else
+    {
+        self.connected = NO;
+        NSLog(@"Error: starting serial connection: %@", result);
+        [self.delegate connectionFailed];
+    }
+}
+
+- (void)resetConnection
+{
+    [self resetConnectionWithDelay:1];
+}
+
+- (void)resetConnectionWithDelay:(float)delay
+{
+    if (!self.connected)
+    {
+        [self performSelector:@selector(startConnection) withObject:nil afterDelay:delay];
+    } else
+    {
+        [self.delegate connectionEstablished];
+    }
 }
 
 - (NSString *)openSerialPort:(NSString *)serialPortFile baud:(speed_t)baudRate

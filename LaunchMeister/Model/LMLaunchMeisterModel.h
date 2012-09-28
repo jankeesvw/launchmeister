@@ -3,8 +3,9 @@
 
 @interface LMLaunchMeisterModel : EESingleton
 
-+ (void) saveLaunchPads:(NSArray *)launchPads;
-
-
 + (NSArray *)getLaunchPads;
++ (NSString *)getPreviousPath;
++ (void)saveLaunchPads:(NSArray *)launchPads toUrl:(NSURL *)url;
++ (NSArray *)loadLaunchPadsFromPath:(NSString *)path;
++ (void)saveLaunchPadsToCurrentFile:(NSArray *)array;
 @end

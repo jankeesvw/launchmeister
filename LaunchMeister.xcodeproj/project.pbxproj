@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F446FDEB153D3DC500312324 /* SmallLEDYellow.png in Resources */ = {isa = PBXBuildFile; fileRef = F446FDEA153D3DC500312324 /* SmallLEDYellow.png */; };
+		F446FDEE153D432E00312324 /* cancel_cleanclick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F446FDED153D432E00312324 /* cancel_cleanclick.mp3 */; };
+		F446FDFC153D45DF00312324 /* status-bar-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F446FDFB153D45DF00312324 /* status-bar-icon.png */; };
+		F446FDFF153D462100312324 /* status-bar-icon-down.png in Resources */ = {isa = PBXBuildFile; fileRef = F446FDFE153D462100312324 /* status-bar-icon-down.png */; };
+		F45330D0153EF0DF00F385BD /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F45330CF153EF0DF00F385BD /* background.png */; };
+		F45650CC153CAC08001EE3AD /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F45650CB153CAC08001EE3AD /* Icon.icns */; };
 		F465B429153B4679004F2251 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F465B428153B4679004F2251 /* Cocoa.framework */; };
 		F465B433153B4679004F2251 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F465B431153B4679004F2251 /* InfoPlist.strings */; };
 		F465B435153B4679004F2251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B434153B4679004F2251 /* main.m */; };
@@ -24,9 +30,18 @@
 		F465B452153B5248004F226A /* LMSerialConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F465B452153B5248004F2269 /* LMSerialConnection.m */; };
 		F4907682153C9C74003879C6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4907681153C9C74003879C6 /* IOKit.framework */; };
 		F4907682153C9C74003879C8 /* LMLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = F4907682153C9C74003879C7 /* LMLauncher.m */; };
+		F4907682153C9C74003879CC /* SmallLEDRed.png in Resources */ = {isa = PBXBuildFile; fileRef = F4907682153C9C74003879CB /* SmallLEDRed.png */; };
+		F4907682153C9C74003879CE /* SmallLEDGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F4907682153C9C74003879CD /* SmallLEDGreen.png */; };
+		F4907682153C9C74003879D2 /* LMStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4907682153C9C74003879D1 /* LMStatusItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F446FDEA153D3DC500312324 /* SmallLEDYellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallLEDYellow.png; sourceTree = "<group>"; };
+		F446FDED153D432E00312324 /* cancel_cleanclick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cancel_cleanclick.mp3; sourceTree = "<group>"; };
+		F446FDFB153D45DF00312324 /* status-bar-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-bar-icon.png"; sourceTree = "<group>"; };
+		F446FDFE153D462100312324 /* status-bar-icon-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-bar-icon-down.png"; sourceTree = "<group>"; };
+		F45330CF153EF0DF00F385BD /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		F45650CB153CAC08001EE3AD /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		F465B424153B4679004F2251 /* LaunchMeister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchMeister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F465B428153B4679004F2251 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F465B42B153B4679004F2251 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -60,6 +75,12 @@
 		F4907682153C9C74003879C7 /* LMLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLauncher.m; sourceTree = "<group>"; };
 		F4907682153C9C74003879C9 /* LMLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLauncher.h; sourceTree = "<group>"; };
 		F4907682153C9C74003879CA /* LMSerialConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSerialConnectionDelegate.h; sourceTree = "<group>"; };
+		F4907682153C9C74003879CB /* SmallLEDRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallLEDRed.png; sourceTree = "<group>"; };
+		F4907682153C9C74003879CD /* SmallLEDGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmallLEDGreen.png; sourceTree = "<group>"; };
+		F4907682153C9C74003879D0 /* LMStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMStatusItemView.h; sourceTree = "<group>"; };
+		F4907682153C9C74003879D1 /* LMStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMStatusItemView.m; sourceTree = "<group>"; };
+		F4907682153C9C74003879D3 /* LMStatusItemViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMStatusItemViewDelegate.h; sourceTree = "<group>"; };
+		F4907682153C9C74003879D4 /* LMLauncherDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLauncherDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +100,7 @@
 		F465B419153B4679004F2251 = {
 			isa = PBXGroup;
 			children = (
+				F45650CB153CAC08001EE3AD /* Icon.icns */,
 				F4907681153C9C74003879C6 /* IOKit.framework */,
 				F465B42E153B4679004F2251 /* LaunchMeister */,
 				F465B427153B4679004F2251 /* Frameworks */,
@@ -123,6 +145,7 @@
 				F465B445153B47AE004F2255 /* LauchPad */,
 				F465B452153B5248004F2253 /* Model */,
 				F465B452153B5248004F2268 /* Interface */,
+				F4907682153C9C74003879CF /* MenuItem */,
 			);
 			path = LaunchMeister;
 			sourceTree = "<group>";
@@ -130,6 +153,13 @@
 		F465B42F153B4679004F2251 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F45330CF153EF0DF00F385BD /* background.png */,
+				F446FDFE153D462100312324 /* status-bar-icon-down.png */,
+				F446FDFB153D45DF00312324 /* status-bar-icon.png */,
+				F446FDED153D432E00312324 /* cancel_cleanclick.mp3 */,
+				F446FDEA153D3DC500312324 /* SmallLEDYellow.png */,
+				F4907682153C9C74003879CD /* SmallLEDGreen.png */,
+				F4907682153C9C74003879CB /* SmallLEDRed.png */,
 				F465B430153B4679004F2251 /* LaunchMeister-Info.plist */,
 				F465B431153B4679004F2251 /* InfoPlist.strings */,
 				F465B434153B4679004F2251 /* main.m */,
@@ -154,6 +184,7 @@
 		F465B452153B5248004F2253 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F4907682153C9C74003879D4 /* LMLauncherDelegate.h */,
 				F4907682153C9C74003879CA /* LMSerialConnectionDelegate.h */,
 				F4907682153C9C74003879C9 /* LMLauncher.h */,
 				F4907682153C9C74003879C7 /* LMLauncher.m */,
@@ -209,6 +240,16 @@
 				F465B43D153B4679004F2251 /* MainMenu.xib */,
 			);
 			path = Interface;
+			sourceTree = "<group>";
+		};
+		F4907682153C9C74003879CF /* MenuItem */ = {
+			isa = PBXGroup;
+			children = (
+				F4907682153C9C74003879D3 /* LMStatusItemViewDelegate.h */,
+				F4907682153C9C74003879D1 /* LMStatusItemView.m */,
+				F4907682153C9C74003879D0 /* LMStatusItemView.h */,
+			);
+			path = MenuItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +308,14 @@
 				F465B439153B4679004F2251 /* Credits.rtf in Resources */,
 				F465B43F153B4679004F2251 /* MainMenu.xib in Resources */,
 				F465B452153B5248004F2251 /* LMLaunchPadController.xib in Resources */,
+				F45650CC153CAC08001EE3AD /* Icon.icns in Resources */,
+				F4907682153C9C74003879CC /* SmallLEDRed.png in Resources */,
+				F4907682153C9C74003879CE /* SmallLEDGreen.png in Resources */,
+				F446FDEB153D3DC500312324 /* SmallLEDYellow.png in Resources */,
+				F446FDEE153D432E00312324 /* cancel_cleanclick.mp3 in Resources */,
+				F446FDFC153D45DF00312324 /* status-bar-icon.png in Resources */,
+				F446FDFF153D462100312324 /* status-bar-icon-down.png in Resources */,
+				F45330D0153EF0DF00F385BD /* background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +336,7 @@
 				F465B452153B5248004F2262 /* NSThread+Reusabilitee.m in Sources */,
 				F465B452153B5248004F226A /* LMSerialConnection.m in Sources */,
 				F4907682153C9C74003879C8 /* LMLauncher.m in Sources */,
+				F4907682153C9C74003879D2 /* LMStatusItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
