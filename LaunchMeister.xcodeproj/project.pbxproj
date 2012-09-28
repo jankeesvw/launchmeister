@@ -11,6 +11,7 @@
 		F446FDEE153D432E00312324 /* cancel_cleanclick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F446FDED153D432E00312324 /* cancel_cleanclick.mp3 */; };
 		F446FDFC153D45DF00312324 /* status-bar-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F446FDFB153D45DF00312324 /* status-bar-icon.png */; };
 		F446FDFF153D462100312324 /* status-bar-icon-down.png in Resources */ = {isa = PBXBuildFile; fileRef = F446FDFE153D462100312324 /* status-bar-icon-down.png */; };
+		F45330D0153EF0DF00F385BD /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F45330CF153EF0DF00F385BD /* background.png */; };
 		F45650CC153CAC08001EE3AD /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F45650CB153CAC08001EE3AD /* Icon.icns */; };
 		F465B429153B4679004F2251 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F465B428153B4679004F2251 /* Cocoa.framework */; };
 		F465B433153B4679004F2251 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F465B431153B4679004F2251 /* InfoPlist.strings */; };
@@ -39,6 +40,7 @@
 		F446FDED153D432E00312324 /* cancel_cleanclick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cancel_cleanclick.mp3; sourceTree = "<group>"; };
 		F446FDFB153D45DF00312324 /* status-bar-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-bar-icon.png"; sourceTree = "<group>"; };
 		F446FDFE153D462100312324 /* status-bar-icon-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-bar-icon-down.png"; sourceTree = "<group>"; };
+		F45330CF153EF0DF00F385BD /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		F45650CB153CAC08001EE3AD /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		F465B424153B4679004F2251 /* LaunchMeister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchMeister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F465B428153B4679004F2251 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -151,6 +153,7 @@
 		F465B42F153B4679004F2251 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F45330CF153EF0DF00F385BD /* background.png */,
 				F446FDFE153D462100312324 /* status-bar-icon-down.png */,
 				F446FDFB153D45DF00312324 /* status-bar-icon.png */,
 				F446FDED153D432E00312324 /* cancel_cleanclick.mp3 */,
@@ -312,6 +315,7 @@
 				F446FDEE153D432E00312324 /* cancel_cleanclick.mp3 in Resources */,
 				F446FDFC153D45DF00312324 /* status-bar-icon.png in Resources */,
 				F446FDFF153D462100312324 /* status-bar-icon-down.png in Resources */,
+				F45330D0153EF0DF00F385BD /* background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
