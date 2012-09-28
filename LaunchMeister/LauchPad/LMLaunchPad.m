@@ -16,6 +16,12 @@
 }
 
 
+- (void)mouseDown:(NSEvent *)theEvent
+{
+    [self.delegate launchApp:self];
+}
+
+
 - (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)sender
 {
     NSPasteboard *pboard;
